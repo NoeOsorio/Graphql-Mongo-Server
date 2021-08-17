@@ -1,12 +1,7 @@
 const { makeExecutableSchema } = require("graphql-tools");
-
 const resolvers = require("../resolvers/resolvers");
-const loadGraphs = require("./readGraphql");
-const typeDefs = loadGraphs();
-
-console.log({ typeDefs });
-
-console.log({ typeDefs });
+const loadGraphql = require("./loadGraphql");
+const typeDefs = loadGraphql();
 
 const schema = makeExecutableSchema({ typeDefs, resolvers });
 

@@ -1,15 +1,14 @@
 const mongoose = require("mongoose");
 
-const { Schema } = mongoose;
+    const { Schema } = mongoose;
 
-const schema = new Schema(
-  {
-    title: { type: String, unique: true },
-  },
-  { versionKey: false }
-);
+    const schema = new Schema(
+        {},
+        { versionKey: false }
+    );
 
-schema.set("toObject", { getters: true });
-schema.set("toJSON", { getters: true });
+    schema.set("toObject", { getters: true });
+    schema.set("toJSON", { getters: true });
 
-module.exports = mongoose.model("Anime", schema);
+    module.exports = mongoose.model("Anime", schema);
+    

@@ -9,7 +9,7 @@ addComponent() {
     mkdir $dirName/Domain
     touch $dirName/Domain/$fileName.schema.graphql
     (echo "type ${1^} {
-        _id: ID
+        _id: ID!
     }   
     " >> $dirName/Domain/$fileName.schema.graphql)
     (echo "const mongoose = require(\"mongoose\");

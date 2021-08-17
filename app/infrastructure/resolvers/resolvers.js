@@ -1,4 +1,6 @@
-const { getAnimes } = require("../repositories/anime.repository");
+const {
+  getAnimes,
+} = require("../../../animes/Infrastructure/anime.repository");
 
 module.exports = {
   Query: {
