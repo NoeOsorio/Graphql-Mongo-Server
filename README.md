@@ -4,6 +4,8 @@ This is an example on how to set a functional server using graphql and a mongoDB
 
 It works with node
 
+Written following Clean Architecture principles
+
 ## Installation
 
 Use npm
