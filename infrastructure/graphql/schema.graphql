@@ -13,8 +13,3 @@ type Query {
   "Anime list"
   animes: [Anime]
 }
-
-type Anime {
-  _id: ID!
-  title: String!
-}

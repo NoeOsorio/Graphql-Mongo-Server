@@ -1,0 +1,4 @@
+type Anime {
+  _id: ID!
+  title: String
+}
