@@ -6,6 +6,8 @@ const resolvers = require("./infrastructure/resolvers/resolvers");
 const app = express();
 const port = process.env.port || 3000;
 
+require("./infrastructure/database/mongo")();
+
 app.use(
   "/api",
   graphqlHTTP({

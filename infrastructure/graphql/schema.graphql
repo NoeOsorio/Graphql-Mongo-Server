@@ -10,4 +10,11 @@ type Query {
   courses: [Course]
   "Devuelve un curso"
   course(id: ID!): Course
+  "Anime list"
+  animes: [Anime]
+}
+
+type Anime {
+  _id: ID!
+  title: String!
 }
