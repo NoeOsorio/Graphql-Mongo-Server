@@ -1,15 +1,11 @@
-type Course {
-  _id: ID!
-  title: String!
-  teacher: String
-  description: String!
-  topic: String
-}
 type Query {
-  "Devuelve todos los cursos"
-  courses: [Course]
-  "Devuelve un curso"
-  course(id: ID!): Course
-  "Anime list"
-  animes: [Anime]
+  "Get a single anime"
+  viewAnime(id: ID!): Anime
+  "List animes"
+  listAnimes: [Anime]
+}
+
+type Mutation {
+  "Create a new Anime"
+  createAnime(input: AnimeInput!): Anime
 }

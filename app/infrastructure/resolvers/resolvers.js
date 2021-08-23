@@ -1,10 +1,14 @@
-const {
-  getAnimes,
-} = require("../../../animes/Infrastructure/anime.repository");
+const AnimeController = require("../../../animes/Ports/anime.controller");
 
 module.exports = {
   Query: {
-    animes: getAnimes,
-    course: (root, { id }) => courses.find((element) => element._id === id),
+    ...AnimeController.query,
   },
+  Mutation: {
+    ...AnimeController.mutation,
+  },
+  // AnimeController,
+  // AnimeMutation: {
+  //   createAnime: AnimeController.createAnime,
+  // },
 };

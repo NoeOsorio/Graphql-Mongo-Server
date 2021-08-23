@@ -2,3 +2,7 @@ type Anime {
   _id: ID!
   title: String!
 }
+
+input AnimeInput {
+  title: String!
+}
